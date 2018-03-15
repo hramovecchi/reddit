@@ -1,4 +1,4 @@
-package com.hramovecchi.redditapp;
+package com.hramovecchi.redditapp.view;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
+import com.hramovecchi.redditapp.R;
 import com.hramovecchi.redditapp.dummy.DummyContent;
 
 import java.util.List;

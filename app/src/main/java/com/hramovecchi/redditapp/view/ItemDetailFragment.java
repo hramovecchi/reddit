@@ -1,4 +1,4 @@
-package com.hramovecchi.redditapp;
+package com.hramovecchi.redditapp.view;
 
 import android.app.Activity;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.hramovecchi.redditapp.R;
 import com.hramovecchi.redditapp.dummy.DummyContent;
 
 /**
