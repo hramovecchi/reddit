@@ -17,7 +17,22 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layoutDirection="rtl"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageButton
+                android:id="@+id/refresh_button"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:src="@android:drawable/stat_notify_sync_noanim" />
+
+            <ImageButton
+                android:id="@+id/delete_all_button"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:src="@android:drawable/ic_delete" />
+
+        </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
 
@@ -29,14 +44,6 @@
 
         <include layout="@layout/item_list" />
     </FrameLayout>
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
 
 
 </android.support.design.widget.CoordinatorLayout>

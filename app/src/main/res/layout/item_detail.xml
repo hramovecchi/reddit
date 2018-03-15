@@ -1,9 +1,84 @@
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/item_detail"
-    style="?android:attr/textAppearanceLarge"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:textIsSelectable="true"
-    tools:context="com.hramovecchi.redditapp.view.ItemDetailFragment" />
+    tools:context="com.hramovecchi.redditapp.view.ItemDetailFragment"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/title_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Title"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title_input"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/autor_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_marginLeft="30dp"
+        android:text="Author:" />
+
+    <TextView
+        android:id="@+id/author_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/autor_label"
+        android:layout_below="@+id/autor_label"
+        android:text="Authors Name" />
+
+    <TextView
+        android:id="@+id/comments_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/author_input"
+        android:layout_below="@+id/author_input"
+        android:layout_marginTop="13dp"
+        android:text="Comments:" />
+
+    <TextView
+        android:id="@+id/comments_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/comments_label"
+        android:layout_below="@+id/comments_label"
+        android:text="3000" />
+
+    <TextView
+        android:id="@+id/time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/thumbnail"
+        android:layout_below="@+id/thumbnail"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Entry Date:" />
+
+    <TextView
+        android:id="@+id/time_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/time_label"
+        android:layout_alignBottom="@+id/time_label"
+        android:layout_toEndOf="@+id/time_label"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="15dp"
+        android:text="hours ago" />
+
+</RelativeLayout>
